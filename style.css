@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@font-face {
+    font-family: 'font-superMario';
+    src: url('SuperMario256.ttf') format('truetype');
+}
 
 :root{
+    --font-Mario: 'font-superMario';
     --font-family:'Montserrat', sans-serif;
-    --bg-color:#4D455D ;
+    --bg-color:#8AC6D1 ;
     --primary-color: #F5E9CF ;
     
 }
@@ -10,7 +15,8 @@ body{
     background-color: var(--bg-color);
     color: var(--primary-color);
     min-height: 100vh;
-    font-family: var(--font-family);
+    text-shadow: rgba(0, 0, 0, 0.514) 2px 2px 2px;
+    font-family: var(--font-Mario);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,9 +46,19 @@ h2{
     margin:20px ;
 }
 .btn-jogar{
-    margin-top:20px;
-    padding: 8px 15px;
+    color: white;
+    margin-top:25px;
+    padding: 15px 25px;
     border: 0;
-    background-color: var(--primary-color);
+    background-color: #d45d79ec;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.541) 2px 2px 2px;
+    font-family: var(--font-Mario);
+    cursor: pointer;
+    text-shadow: rgba(0, 0, 0, 0.623) 2px 2px 2px;
+}
+.btn-jogar:hover{
+    background-color: #e9b2bcee;
+    color: black;
+    text-shadow: none;
 }
